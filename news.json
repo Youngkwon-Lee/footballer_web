@@ -1,0 +1,25 @@
+{
+    "news": [
+        {
+            "image": "images/news1.png",
+            "title": "스트라드비젼, 코스닥 기술특례 상장을 위한 기술성 평가 ‘A, A’ 통과",
+            "description": "스트라드비젼은 스마트한 인공지능 기반의 카메라 인식 기술로 모두를 위한 안전한 자율주행을 가능하게 합니다.",
+            "tags": ["#stradvision", "#SVNet", "#IPO"],
+            "date": "2024.05.21"
+        },
+        {
+            "image": "images/news2.png",
+            "title": "스트라드비젼 이사회에 현대자동차 임원 합류",
+            "description": "스트라드비젼은 스마트한 인공지능 기반의 카메라 인식 기술로 모두를 위한 안전한 자율주행을 가능하게 합니다.",
+            "tags": ["#stradvision", "#Hyundai Motor Company", "#Board of Directors"],
+            "date": "2024.05.07"
+        },
+        {
+            "image": "images/news3.png",
+            "title": "스트라드비젼, AI 학습 자원 관리 최적화 위해 디지털 혁신 가속화",
+            "description": "스트라드비젼은 스마트한 인공지능 기반의 카메라 인식 기술로 모두를 위한 안전한 자율주행을 가능하게 합니다.",
+            "tags": ["#stradvision", "#DX", "#AI"],
+            "date": "2024.04.23"
+        }
+    ]
+}

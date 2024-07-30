@@ -13,12 +13,20 @@
             "link": "#product"
         },
         {
-            "name": "Newsroom",
-            "link": "#news"
+            "name": "IR",
+            "link": "#ir"
         },
         {
             "name": "Contact Us",
             "link": "#contact"
+        },
+        {
+            "name": "Newsroom",
+            "link": "#newsroom"
+        },
+        {
+            "name": "Careers",
+            "link": "#careers"
         }
     ]
 }

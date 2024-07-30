@@ -3,68 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footballer</title>
+    <title>FOOTBALLER</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <div id="wrap">
         <!-- Header -->
         <header class="header">
             <div class="inner">
-                <h1><a href="/">STRADVISION</a></h1>
-                <nav>
+                <h1><a href="/"><img src="images/logo.png" alt="FOOTBALLER Logo"></a></h1>
+                <nav id="desktop-nav">
                     <ul id="nav-menu">
                         <!-- 동적 네비게이션 메뉴가 삽입될 영역 -->
                     </ul>
                 </nav>
+                <button id="mobile-menu-button">☰</button>
             </div>
         </header>
 
+        <!-- Mobile Menu -->
+        <nav id="mobile-nav">
+            <ul id="mobile-nav-menu">
+                <!-- 동적 네비게이션 메뉴가 삽입될 영역 -->
+            </ul>
+        </nav>
+
         <!-- Main Content -->
         <main>
-            <!-- 동적 콘텐츠가 삽입될 영역 -->
-            <section class="main-mv">
-                <div class="main-mv__frame">
-                    <div class="main-mv__video">
-                        <div class="main-mv__layer">
-                            <video loop="loop">
-                                <source src="videos/8ac6ad01eb6087c8ba49d13b1eb5b022.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <button class="play"></button>
-                        <button class="close"></button>
-                    </div>
-                    <div class="main-mv__slide slick-initialized slick-slider">
+            <section class="main-content">
+                <div class="content-frame">
+                    <div class="content-slide slick-initialized slick-slider">
                         <div class="slick-list draggable">
                             <div class="slick-track">
-                                <div class="item slick-slide">
-                                    <div class="main-mv__bg">
-                                        <img src="images/4851bc95dec2c61827ec5e2683a4981e.jpg" alt="" class="hide-768">
-                                        <img src="images/44bd47f12c392afbc4633fc3995cbdf6.jpg" alt="" class="hide-default show-768">
-                                    </div>
-                                    <div class="inner">
-                                        <b class="font-en tit-anim"><span> Vision AI for All </span></b>
-                                        <p class="tit-anim"><span> 스트라드비젼은 스마트한 인공지능 기반의 카메라 인식 기술로<br> 모두를 위한 안전한 자율주행을 가능하게 합니다.</span></p>
-                                    </div>
-                                </div>
-                                <div class="item slick-slide slick-current slick-active">
-                                    <div class="main-mv__bg">
-                                        <img src="images/cf8dd406c45159a5006aa6eff8d941ac.jpg" alt="" class="hide-768">
-                                        <img src="images/231527660a20a6c84a15fb9aa369e403.jpg" alt="" class="hide-default show-768">
-                                    </div>
-                                    <div class="inner">
-                                        <b class="font-en tit-anim"><span> Vision AI for All</span></b>
-                                        <p class="tit-anim"><span> 스트라드비젼은 스마트한 인공지능 기반의 카메라 인식 기술로<br> 모두를 위한 안전한 자율주행을 가능하게 합니다.</span></p>
-                                    </div>
-                                </div>
+                                <!-- 동적 이미지 슬라이드 -->
                             </div>
                         </div>
                         <div class="slick-nav">
-                            <div class="slick-nav__dots">
-                                <button type="button" class="circle"></button>
-                                <button type="button" class="circle active"></button>
-                            </div>
+                            <div class="slick-nav__dots"></div>
                             <div class="slick-nav__btns">
                                 <button type="button" class="slick-nav__prev">prev</button>
                                 <button type="button" class="slick-nav__pause">pause</button>
@@ -74,12 +53,109 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Footballer란? -->
+            <section class="section" id="about">
+                <div class="inner">
+                    <h2>Footballer란?</h2>
+                    <img src="images/footballer_1.png" alt="Footballer란?" class="fade-in">
+                    <p>풋볼러는 AI가 만드는 숏폼 하이라이트 기반 스포츠 커뮤니티 플랫폼입니다.</p>
+                    <ul>
+                        <li>내 플레이 영상만 따로 보고 싶다면</li>
+                        <li>필드에서 날아다녔던 경기 하이라이트가 필요하다면</li>
+                        <li>나의 영상을 숏츠로 소장하고 싶다면</li>
+                    </ul>
+                    <p>경기 영상의 유튜브 링크만 입력하면 자신의 하이라이트 영상을 AI가 편집하여 빠른 속도로 제공합니다.</p>
+                    <p>제공된 영상은 풋볼러 커뮤니티에 자동으로 업로드되어, 스포츠 숏폼 하이라이트가 모인 SNS가 형성됩니다.</p>
+                    <p>영상 제작 완료와 동시에 자신의 SNS에 업로드할 수 있습니다.</p>
+                </div>
+            </section>
+
+            <!-- 마일스톤 및 비전 -->
+            <section class="section" id="vision">
+                <div class="inner">
+                    <h2>마일스톤 및 비전</h2>
+                    <p>저희의 비전은 스포츠 동호인들의 가장 깊은 needs를 데이터 기반의 기술로 해결함으로써 급성장하는 스포츠 커뮤니티와 커머스 시장의 선두주자로 자리잡아, 스포츠계의 구글이 되는 것입니다!</p>
+                </div>
+            </section>
+
+            <!-- 고객들 -->
+            <section class="section" id="customers">
+                <div class="inner">
+                    <h2>Footballer와 함께 하는 고객들</h2>
+                    <img src="images/footballer_2.png" alt="고객들" class="fade-in">
+                    <p>1030세대 축구 동호인들을 직접 만나 VOC를 기반으로 서비스를 운영합니다</p>
+                    <p>아마추어 축구 클럽 30개 팀 대상으로 협약이 완료되었습니다</p>
+                    <p>현재 강남구 소재 2곳의 유소년 축구 클럽과 pre-MVP 시연 이후 협약이 완료되었습니다</p>
+                </div>
+            </section>
+
+            <!-- 수상이력 -->
+            <section class="section" id="awards">
+                <div class="inner">
+                    <h2>수상이력</h2>
+                    <img src="images/footballer_3.png" alt="수상이력" class="fade-in">
+                    <ul>
+                        <li><a href="https://me2.do/GedOHHHL" target="_blank">2024 청년창업사관학교 선정</a></li>
+                        <li><a href="https://www.sentv.co.kr/news/view/647683" target="_blank">2023 스타트업 엑스퍼츠 선정</a></li>
+                        <li><a href="https://campustown.seoul.go.kr/site/main/board/university_news/2482?cp=1&sv=%EC%8B%9C%EB%A6%BD%EB%8C%80&sortOrder=BA_REGDATE&sortDirection=DESC&listType=list&bcId=university_news&baNotice=false&baCommSelec=false&baOpenDay=false&baUse=true" target="_blank">2023 서울시립대 캠퍼스타운 선정</a></li>
+                        <li><a href="https://www.kised.or.kr/menu.es?mid=a10205010000" target="_blank">2022 예비창업패키지 선정</a></li>
+                        <li><a href="https://aict.snu.ac.kr/?p=81_view&idx=102&page=1&receiptTitle=%EB%8C%80%ED%95%99%EC%83%9D" target="_blank">2022 경기도 대학생 융합기술 창업지원 선정</a></li>
+                        <li><a href="https://startup.hanyang.ac.kr/" target="_blank">2022 한양대학교 캠퍼스타운 선정</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Newsroom Section -->
+            <section class="section" id="newsroom">
+                <div class="inner">
+                    <h2>Newsroom</h2>
+                    <div class="news-grid" id="news-grid">
+                        <!-- 동적 뉴스 콘텐츠가 삽입될 영역 -->
+                    </div>
+                    <div class="common-btn">
+                        <a href="#more-news">
+                            <div><img src="images/common_btn.png" alt="View More"></div><span>View More</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Us Section -->
+            <section class="section" id="contact">
+                <div class="inner">
+                    <h2>Contact Us</h2>
+                    <p>궁금한 사항이 있으신가요? 문의 남겨주시면 빠르게 답변해 드리겠습니다.</p>
+                    <div class="contact-grid">
+                        <a href="#careers" class="contact-item">
+                            <img src="images/careers_icon.png" alt="Careers Icon">
+                            <h3>Careers</h3>
+                        </a>
+                        <a href="#ir" class="contact-item">
+                            <img src="images/ir_icon.png" alt="IR Icon">
+                            <h3>IR</h3>
+                        </a>
+                        <a href="#business" class="contact-item">
+                            <img src="images/business_icon.png" alt="Business Icon">
+                            <h3>Business</h3>
+                        </a>
+                        <a href="#pr" class="contact-item">
+                            <img src="images/pr_icon.png" alt="PR Icon">
+                            <h3>PR</h3>
+                        </a>
+                        <a href="#general" class="contact-item">
+                            <img src="images/general_icon.png" alt="General Icon">
+                            <h3>General</h3>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!-- Footer -->
         <footer>
             <div class="inner">
-                <p>&copy; 2024 STRADVISION. All Rights Reserved.</p>
+                <p>&copy; 2024 FOOTBALLER. All Rights Reserved.</p>
             </div>
         </footer>
     </div>
