@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footballer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- Header -->
+        <header class="header">
+            <div class="inner">
+                <h1><a href="/">STRADVISION</a></h1>
+                <nav>
+                    <ul id="nav-menu">
+                        <!-- 동적 네비게이션 메뉴가 삽입될 영역 -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- 동적 콘텐츠가 삽입될 영역 -->
+            <section class="main-mv">
+                <div class="main-mv__frame">
+                    <div class="main-mv__video">
+                        <div class="main-mv__layer">
+                            <video loop="loop">
+                                <source src="videos/8ac6ad01eb6087c8ba49d13b1eb5b022.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <button class="play"></button>
+                        <button class="close"></button>
+                    </div>
+                    <div class="main-mv__slide slick-initialized slick-slider">
+                        <div class="slick-list draggable">
+                            <div class="slick-track">
+                                <div class="item slick-slide">
+                                    <div class="main-mv__bg">
+                                        <img src="images/4851bc95dec2c61827ec5e2683a4981e.jpg" alt="" class="hide-768">
+                                        <img src="images/44bd47f12c392afbc4633fc3995cbdf6.jpg" alt="" class="hide-default show-768">
+                                    </div>
+                                    <div class="inner">
+                                        <b class="font-en tit-anim"><span> Vision AI for All </span></b>
+                                        <p class="tit-anim"><span> 스트라드비젼은 스마트한 인공지능 기반의 카메라 인식 기술로<br> 모두를 위한 안전한 자율주행을 가능하게 합니다.</span></p>
+                                    </div>
+                                </div>
+                                <div class="item slick-slide slick-current slick-active">
+                                    <div class="main-mv__bg">
+                                        <img src="images/cf8dd406c45159a5006aa6eff8d941ac.jpg" alt="" class="hide-768">
+                                        <img src="images/231527660a20a6c84a15fb9aa369e403.jpg" alt="" class="hide-default show-768">
+                                    </div>
+                                    <div class="inner">
+                                        <b class="font-en tit-anim"><span> Vision AI for All</span></b>
+                                        <p class="tit-anim"><span> 스트라드비젼은 스마트한 인공지능 기반의 카메라 인식 기술로<br> 모두를 위한 안전한 자율주행을 가능하게 합니다.</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-nav">
+                            <div class="slick-nav__dots">
+                                <button type="button" class="circle"></button>
+                                <button type="button" class="circle active"></button>
+                            </div>
+                            <div class="slick-nav__btns">
+                                <button type="button" class="slick-nav__prev">prev</button>
+                                <button type="button" class="slick-nav__pause">pause</button>
+                                <button type="button" class="slick-nav__next">next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="inner">
+                <p>&copy; 2024 STRADVISION. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

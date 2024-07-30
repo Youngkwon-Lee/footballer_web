@@ -1,0 +1,14 @@
+{
+    "news": [
+        {
+            "title": "New AI Technology Released",
+            "description": "Our latest AI technology has been released.",
+            "link": "#"
+        },
+        {
+            "title": "Company Achievements",
+            "description": "We have achieved significant milestones this quarter.",
+            "link": "#"
+        }
+    ]
+}

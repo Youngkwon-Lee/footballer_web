@@ -1,0 +1,126 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .inner {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#dynamic-content {
+    width: 90%;
+    margin: 20px auto;
+    min-height: 300px;
+}
+
+.main-mv {
+    position: relative;
+}
+
+.main-mv__frame {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-mv__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.main-mv__layer video {
+    width: 100%;
+    height: auto;
+}
+
+.main-mv__slide {
+    position: relative;
+    z-index: 2;
+}
+
+.main-mv__bg img {
+    width: 100%;
+}
+
+.inner {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: #fff;
+}
+
+.slick-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slick-nav__dots {
+    display: flex;
+    gap: 10px;
+}
+
+.slick-nav__dots .circle {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: none;
+    cursor: pointer;
+}
+
+.slick-nav__dots .circle.active {
+    background: #fff;
+}
+
+.slick-nav__btns {
+    display: flex;
+    gap: 10px;
+}
+
+.slick-nav__btns button {
+    cursor: pointer;
+}
